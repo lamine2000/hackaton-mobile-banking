@@ -1,0 +1,340 @@
+
+enum AccountStatus {
+	PENDING,
+    ACTIVE,
+    INACTIVE
+}
+
+enum FunctionalityStatus {
+	UNAVAILABLE,
+    AVAILABLE,
+    OUT_OF_CREDITS
+}
+
+enum StoreStatus {
+	OPENED,
+	CLOSED,
+	OUT_OF_SERVICE
+}
+
+enum FunctionalityCategoryStatus {
+	UNAVAILABLE,
+    AVAILABLE
+}
+
+enum CurrencyCode {
+	XOF, USD, EUR
+}
+
+enum TransacType {
+	DEPOSIT,
+    WITHDRAW,
+    INSURANCE_AND_MICRO_CREDITS_CONTRIBUTION,
+    PAYMENT
+}
+
+enum MobileBankingActorStatus {
+	AVAILABLE,
+    UNAVAILABLE,
+    OUT_OF_CREDITS
+}
+
+enum SupplyRequestStatus {
+	PENDING,
+    REJECTED,
+    APPROVED
+}
+
+enum PaymentMethodType {
+	CASH,
+    ELECTRONIC
+}
+
+
+enum EventStatus {
+	EXPIRED,
+    UPCOMING,
+    CANCELLED
+}
+
+enum NotificationStatus {
+	ACTIVE,
+    INACTIVE
+}
+
+enum NotificationType {
+	PUSH_NOTIFICATION,
+    SMS
+}
+
+enum TicketStatus {
+	SOLD,
+    AVAILABLE,
+    EXPIRED
+}
+
+entity Functionality {
+	image ImageBlob required
+    status FunctionalityStatus required
+    //relation with Functionality Category and MobileBankingActor
+}
+
+entity FunctionalityCategory {
+	logo ImageBlob required
+    status FunctionalityCategoryStatus required
+}
+
+entity Transac {
+	code String required
+	createdBy String required
+    createdAt Instant required
+    receiver String
+    sender String
+    amount Double required
+    currency CurrencyCode required
+    type TransacType required
+}
+
+entity MobileBankingActor {
+	logo ImageBlob required
+    name String required
+    status MobileBankingActorStatus required
+}
+
+entity SupplyRequest {
+	//Functionality a preciser ou categorie Functionality (suivant comprehension)
+    //chose the first one until proven wrong
+    amount Double,
+    quantity Integer,
+    status SupplyRequestStatus required
+}
+
+entity Supply { //deposit and withraw credits for OM for example
+	receiver String required
+    //link with SupplyRequest
+}
+
+entity Payment {
+	//link to transac
+}
+
+entity PaymentMethod {
+	name String required
+    type PaymentMethodType required
+} //DEFAULT: CASH and one for each mobile banking actor (all electronic)
+
+entity Event {
+	date Instant
+    title String required
+    description TextBlob
+    createdAt Instant required
+    createdBy String required
+    organizer String required
+    expireAt Instant required
+    status EventStatus required
+}
+
+entity Notification {
+	title String required
+	message String required
+    createdAt Instant required
+    sentTo String required
+    sentBy String required
+}
+
+entity NotificationSettings {
+	name String required
+    description TextBlob
+    value String
+}
+
+entity Ticket {
+	//link to event
+    //link to transac
+    //link to ticketDelivery
+    code String
+    data Blob required
+    pricePerUnit Double required
+    finalAgentCommission Double
+    status TicketStatus required
+}
+
+entity TicketDelivery {
+	boughtAt Instant required
+    boughtBy String
+    quantity Integer required
+    //link to ticketDelivryMethod
+}
+
+entity TicketDeliveryMethod {
+	name String required
+    description TextBlob required
+}
+
+entity Store {
+	code String required
+    location Blob required
+    address String
+    name String required
+	description String
+	currency CurrencyCode
+	phone String required
+	notificationEmail String required
+	status StoreStatus
+	aboutUs TextBlob
+}
+
+entity InsuranceAndMicroCreditsActor {
+	logo ImageBlob required
+    name String required
+    acronym String
+    description TextBlob
+}
+
+entity InsuranceAndMicroCreditsContribution {
+	code String required
+}
+
+entity AdminNetwork {
+	firstName String required
+	lastName String required
+	email String required
+	phone String required
+	addressLine1 String required
+	addressLine2 String
+	city String required
+	status AccountStatus required
+	commissionRate Double required
+}
+
+entity IntermediateAgent {
+	firstName String required
+	lastName String required
+	email String required
+	phone String required
+	addressLine1 String required
+	addressLine2 String
+	city String required
+	status AccountStatus required
+	commissionRate Double required
+}
+
+entity FinalAgent {
+	firstName String required
+	lastName String required
+	email String required
+	phone String required
+	addressLine1 String required
+	addressLine2 String
+	city String required
+	status AccountStatus required
+	commissionRate Double required
+}
+
+entity Country {
+	name String required unique
+	codeAlpha String required
+	code String required
+	flag String
+	createdAt Instant
+	createdBy String
+}
+
+entity Region {
+	name String required unique
+	code String required
+	createdAt Instant
+	createdBy String
+}
+
+entity Department{
+	name String required unique
+	code String required
+	createdAt Instant
+	createdBy String
+}
+
+entity Town{
+	name String required unique
+	code String required
+	createdAt Instant
+	createdBy String
+}
+
+entity Zone{
+	name String required unique
+	code String required
+	createdAt Instant
+	createdBy String
+}
+
+relationship OneToOne {
+	AdminNetwork{User(login)} to User
+	IntermediateAgent{User(login)} to User
+    FinalAgent{User(login)} to User
+}
+
+relationship ManyToOne {
+	Functionality{FunctionalityCategory} to FunctionalityCategory
+    //Functionality{MobileBankingActor} to MobileBankingActor
+
+    SupplyRequest{Functionality} to Functionality
+    Supply{SupplyRequest} to SupplyRequest //the Supply is the answer to the SupplyRequest
+
+    Payment{Transac} to Transac
+
+    Payment{PaymentMethod} to PaymentMethod
+
+    Ticket{Event} to Event
+    Ticket{Payment} to Payment
+    Ticket{TicketDelivery} to TicketDelivery
+
+    TicketDelivery{TicketDeliveryMethod} to TicketDeliveryMethod
+
+    Store {Zone(name)} to Zone
+	Store {Town(name)} to Town
+	Store {Department(name)} to Department
+	Store {Region(name)} to Region
+	Store {Country(name)} to Country
+
+    FinalAgent{Store} to Store
+    IntermediateAgent{Store} to Store
+
+    InsuranceAndMicroCreditsContribution{InsuranceAndMicroCreditsActor} to InsuranceAndMicroCreditsActor
+    InsuranceAndMicroCreditsContribution{Payment} to Payment
+}
+
+relationship ManyToMany {
+	MobileBankingActor{Functionality} to Functionality{MobileBankingActor}
+}
+
+paginate * with pagination
+dto * with mapstruct
+service * with serviceImpl
+search * with elasticsearch
+
+filter Functionality
+filter FunctionalityCategory
+filter Transac
+filter MobileBankingActor
+filter SupplyRequest
+filter Supply
+filter Payment
+filter PaymentMethod
+filter Event
+filter Notification
+filter NotificationSettings
+filter Ticket
+filter TicketDelivery
+filter TicketDeliveryMethod
+filter Store
+filter InsuranceAndMicroCreditsActor
+filter InsuranceAndMicroCreditsContribution
+filter AdminNetwork
+filter IntermediateAgent
+filter FinalAgent
+filter Country
+filter Region
+filter Department
+filter Town
+filter Zone
