@@ -1,0 +1,28 @@
+{
+  "hackaton3App": {
+    "functionality": {
+      "home": {
+        "title": "Functionalities",
+        "refreshListLabel": "Actualiser la liste",
+        "createLabel": "Créer un nouveau Functionality",
+        "createOrEditLabel": "Créer ou éditer un Functionality",
+        "search": "Recherche pour Functionality",
+        "notFound": "Aucun Functionality trouvé"
+      },
+      "created": "Un nouveau Functionality a été créé avec l'identifiant {{ param }}",
+      "updated": "Le Functionality avec l'identifiant {{ param }} a été mis à jour",
+      "deleted": "Le Functionality avec l'identifiant {{ param }} a été supprimé",
+      "delete": {
+        "question": "Êtes-vous certain de vouloir supprimer le Functionality {{ id }} ?"
+      },
+      "detail": {
+        "title": "Functionality"
+      },
+      "id": "ID",
+      "image": "Image",
+      "status": "Status",
+      "functionalityCategory": "Functionality Category",
+      "mobileBankingActor": "Mobile Banking Actor"
+    }
+  }
+}

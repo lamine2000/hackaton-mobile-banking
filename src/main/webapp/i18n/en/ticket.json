@@ -1,0 +1,32 @@
+{
+  "hackaton3App": {
+    "ticket": {
+      "home": {
+        "title": "Tickets",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Ticket",
+        "createOrEditLabel": "Create or edit a Ticket",
+        "search": "Search for Ticket",
+        "notFound": "No Tickets found"
+      },
+      "created": "A new Ticket is created with identifier {{ param }}",
+      "updated": "A Ticket is updated with identifier {{ param }}",
+      "deleted": "A Ticket is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Ticket {{ id }}?"
+      },
+      "detail": {
+        "title": "Ticket"
+      },
+      "id": "ID",
+      "code": "Code",
+      "data": "Data",
+      "pricePerUnit": "Price Per Unit",
+      "finalAgentCommission": "Final Agent Commission",
+      "status": "Status",
+      "event": "Event",
+      "payment": "Payment",
+      "ticketDelivery": "Ticket Delivery"
+    }
+  }
+}

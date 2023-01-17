@@ -1,0 +1,35 @@
+{
+  "hackaton3App": {
+    "finalAgent": {
+      "home": {
+        "title": "Final Agents",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Final Agent",
+        "createOrEditLabel": "Create or edit a Final Agent",
+        "search": "Search for Final Agent",
+        "notFound": "No Final Agents found"
+      },
+      "created": "A new Final Agent is created with identifier {{ param }}",
+      "updated": "A Final Agent is updated with identifier {{ param }}",
+      "deleted": "A Final Agent is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Final Agent {{ id }}?"
+      },
+      "detail": {
+        "title": "Final Agent"
+      },
+      "id": "ID",
+      "firstName": "First Name",
+      "lastName": "Last Name",
+      "email": "Email",
+      "phone": "Phone",
+      "addressLine1": "Address Line 1",
+      "addressLine2": "Address Line 2",
+      "city": "City",
+      "status": "Status",
+      "commissionRate": "Commission Rate",
+      "user": "User",
+      "store": "Store"
+    }
+  }
+}

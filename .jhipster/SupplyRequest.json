@@ -1,0 +1,37 @@
+{
+  "applications": "*",
+  "changelogDate": "20230117000318",
+  "dto": "mapstruct",
+  "embedded": false,
+  "entityTableName": "supply_request",
+  "fields": [
+    {
+      "fieldName": "amount",
+      "fieldType": "Double"
+    },
+    {
+      "fieldName": "quantity",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "status",
+      "fieldType": "SupplyRequestStatus",
+      "fieldValidateRules": ["required"],
+      "fieldValues": "PENDING,REJECTED,APPROVED"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": true,
+  "name": "SupplyRequest",
+  "pagination": "pagination",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "functionality",
+      "relationshipName": "functionality",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "searchEngine": "elasticsearch",
+  "service": "serviceImpl"
+}

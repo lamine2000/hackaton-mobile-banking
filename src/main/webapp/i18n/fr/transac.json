@@ -1,0 +1,32 @@
+{
+  "hackaton3App": {
+    "transac": {
+      "home": {
+        "title": "Transacs",
+        "refreshListLabel": "Actualiser la liste",
+        "createLabel": "Créer un nouveau Transac",
+        "createOrEditLabel": "Créer ou éditer un Transac",
+        "search": "Recherche pour Transac",
+        "notFound": "Aucun Transac trouvé"
+      },
+      "created": "Un nouveau Transac a été créé avec l'identifiant {{ param }}",
+      "updated": "Le Transac avec l'identifiant {{ param }} a été mis à jour",
+      "deleted": "Le Transac avec l'identifiant {{ param }} a été supprimé",
+      "delete": {
+        "question": "Êtes-vous certain de vouloir supprimer le Transac {{ id }} ?"
+      },
+      "detail": {
+        "title": "Transac"
+      },
+      "id": "ID",
+      "code": "Code",
+      "createdBy": "Created By",
+      "createdAt": "Created At",
+      "receiver": "Receiver",
+      "sender": "Sender",
+      "amount": "Amount",
+      "currency": "Currency",
+      "type": "Type"
+    }
+  }
+}

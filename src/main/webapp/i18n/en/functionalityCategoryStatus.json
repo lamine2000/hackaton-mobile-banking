@@ -1,0 +1,9 @@
+{
+  "hackaton3App": {
+    "FunctionalityCategoryStatus": {
+      "null": "",
+      "UNAVAILABLE": "UNAVAILABLE",
+      "AVAILABLE": "AVAILABLE"
+    }
+  }
+}

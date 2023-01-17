@@ -1,0 +1,26 @@
+{
+  "hackaton3App": {
+    "ticketDeliveryMethod": {
+      "home": {
+        "title": "TicketDeliveryMethods",
+        "refreshListLabel": "Actualiser la liste",
+        "createLabel": "Créer un nouveau Ticket Delivery Method",
+        "createOrEditLabel": "Créer ou éditer un Ticket Delivery Method",
+        "search": "Recherche pour Ticket Delivery Method",
+        "notFound": "Aucun Ticket Delivery Method trouvé"
+      },
+      "created": "Un nouveau Ticket Delivery Method a été créé avec l'identifiant {{ param }}",
+      "updated": "Le Ticket Delivery Method avec l'identifiant {{ param }} a été mis à jour",
+      "deleted": "Le Ticket Delivery Method avec l'identifiant {{ param }} a été supprimé",
+      "delete": {
+        "question": "Êtes-vous certain de vouloir supprimer le Ticket Delivery Method {{ id }} ?"
+      },
+      "detail": {
+        "title": "Ticket Delivery Method"
+      },
+      "id": "ID",
+      "name": "Name",
+      "description": "Description"
+    }
+  }
+}

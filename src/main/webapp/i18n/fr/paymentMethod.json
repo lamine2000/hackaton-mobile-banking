@@ -1,0 +1,26 @@
+{
+  "hackaton3App": {
+    "paymentMethod": {
+      "home": {
+        "title": "PaymentMethods",
+        "refreshListLabel": "Actualiser la liste",
+        "createLabel": "Créer un nouveau Payment Method",
+        "createOrEditLabel": "Créer ou éditer un Payment Method",
+        "search": "Recherche pour Payment Method",
+        "notFound": "Aucun Payment Method trouvé"
+      },
+      "created": "Un nouveau Payment Method a été créé avec l'identifiant {{ param }}",
+      "updated": "Le Payment Method avec l'identifiant {{ param }} a été mis à jour",
+      "deleted": "Le Payment Method avec l'identifiant {{ param }} a été supprimé",
+      "delete": {
+        "question": "Êtes-vous certain de vouloir supprimer le Payment Method {{ id }} ?"
+      },
+      "detail": {
+        "title": "Payment Method"
+      },
+      "id": "ID",
+      "name": "Name",
+      "type": "Type"
+    }
+  }
+}

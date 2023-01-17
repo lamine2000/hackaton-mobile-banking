@@ -1,0 +1,35 @@
+{
+  "hackaton3App": {
+    "intermediateAgent": {
+      "home": {
+        "title": "IntermediateAgents",
+        "refreshListLabel": "Actualiser la liste",
+        "createLabel": "Créer un nouveau Intermediate Agent",
+        "createOrEditLabel": "Créer ou éditer un Intermediate Agent",
+        "search": "Recherche pour Intermediate Agent",
+        "notFound": "Aucun Intermediate Agent trouvé"
+      },
+      "created": "Un nouveau Intermediate Agent a été créé avec l'identifiant {{ param }}",
+      "updated": "Le Intermediate Agent avec l'identifiant {{ param }} a été mis à jour",
+      "deleted": "Le Intermediate Agent avec l'identifiant {{ param }} a été supprimé",
+      "delete": {
+        "question": "Êtes-vous certain de vouloir supprimer le Intermediate Agent {{ id }} ?"
+      },
+      "detail": {
+        "title": "Intermediate Agent"
+      },
+      "id": "ID",
+      "firstName": "First Name",
+      "lastName": "Last Name",
+      "email": "Email",
+      "phone": "Phone",
+      "addressLine1": "Address Line 1",
+      "addressLine2": "Address Line 2",
+      "city": "City",
+      "status": "Status",
+      "commissionRate": "Commission Rate",
+      "user": "User",
+      "store": "Store"
+    }
+  }
+}

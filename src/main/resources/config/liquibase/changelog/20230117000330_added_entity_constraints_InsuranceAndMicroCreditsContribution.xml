@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd">
+    <!--
+        Added the constraints for entity InsuranceAndMicroCreditsContribution.
+    -->
+    <changeSet id="20230117000330-2" author="jhipster">
+
+        <addForeignKeyConstraint baseColumnNames="insurance_and_micro_credits_actor_id"
+                                 baseTableName="insurance_and_micro_credits_contribution"
+                                 constraintName="fk_insurance_and_micro_credits___insurance_and_micro_cred_e3_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="insurance_and_micro_credits_actor"/>
+
+        <addForeignKeyConstraint baseColumnNames="payment_id"
+                                 baseTableName="insurance_and_micro_credits_contribution"
+                                 constraintName="fk_insurance_and_micro_credits_contribution__payment_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="payment"/>
+    </changeSet>
+</databaseChangeLog>

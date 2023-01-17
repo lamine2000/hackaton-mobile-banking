@@ -1,0 +1,34 @@
+{
+  "hackaton3App": {
+    "adminNetwork": {
+      "home": {
+        "title": "AdminNetworks",
+        "refreshListLabel": "Actualiser la liste",
+        "createLabel": "Créer un nouveau Admin Network",
+        "createOrEditLabel": "Créer ou éditer un Admin Network",
+        "search": "Recherche pour Admin Network",
+        "notFound": "Aucun Admin Network trouvé"
+      },
+      "created": "Un nouveau Admin Network a été créé avec l'identifiant {{ param }}",
+      "updated": "Le Admin Network avec l'identifiant {{ param }} a été mis à jour",
+      "deleted": "Le Admin Network avec l'identifiant {{ param }} a été supprimé",
+      "delete": {
+        "question": "Êtes-vous certain de vouloir supprimer le Admin Network {{ id }} ?"
+      },
+      "detail": {
+        "title": "Admin Network"
+      },
+      "id": "ID",
+      "firstName": "First Name",
+      "lastName": "Last Name",
+      "email": "Email",
+      "phone": "Phone",
+      "addressLine1": "Address Line 1",
+      "addressLine2": "Address Line 2",
+      "city": "City",
+      "status": "Status",
+      "commissionRate": "Commission Rate",
+      "user": "User"
+    }
+  }
+}

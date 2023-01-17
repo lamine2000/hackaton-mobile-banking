@@ -1,0 +1,9 @@
+{
+  "hackaton3App": {
+    "PaymentMethodType": {
+      "null": "",
+      "CASH": "CASH",
+      "ELECTRONIC": "ELECTRONIC"
+    }
+  }
+}

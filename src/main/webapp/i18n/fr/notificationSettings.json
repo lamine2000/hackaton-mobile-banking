@@ -1,0 +1,27 @@
+{
+  "hackaton3App": {
+    "notificationSettings": {
+      "home": {
+        "title": "NotificationSettings",
+        "refreshListLabel": "Actualiser la liste",
+        "createLabel": "Créer un nouveau Notification Settings",
+        "createOrEditLabel": "Créer ou éditer un Notification Settings",
+        "search": "Recherche pour Notification Settings",
+        "notFound": "Aucun Notification Settings trouvé"
+      },
+      "created": "Un nouveau Notification Settings a été créé avec l'identifiant {{ param }}",
+      "updated": "Le Notification Settings avec l'identifiant {{ param }} a été mis à jour",
+      "deleted": "Le Notification Settings avec l'identifiant {{ param }} a été supprimé",
+      "delete": {
+        "question": "Êtes-vous certain de vouloir supprimer le Notification Settings {{ id }} ?"
+      },
+      "detail": {
+        "title": "Notification Settings"
+      },
+      "id": "ID",
+      "name": "Name",
+      "description": "Description",
+      "value": "Value"
+    }
+  }
+}

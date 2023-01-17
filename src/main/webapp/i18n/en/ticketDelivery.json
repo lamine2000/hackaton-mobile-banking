@@ -1,0 +1,28 @@
+{
+  "hackaton3App": {
+    "ticketDelivery": {
+      "home": {
+        "title": "Ticket Deliveries",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Ticket Delivery",
+        "createOrEditLabel": "Create or edit a Ticket Delivery",
+        "search": "Search for Ticket Delivery",
+        "notFound": "No Ticket Deliveries found"
+      },
+      "created": "A new Ticket Delivery is created with identifier {{ param }}",
+      "updated": "A Ticket Delivery is updated with identifier {{ param }}",
+      "deleted": "A Ticket Delivery is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Ticket Delivery {{ id }}?"
+      },
+      "detail": {
+        "title": "Ticket Delivery"
+      },
+      "id": "ID",
+      "boughtAt": "Bought At",
+      "boughtBy": "Bought By",
+      "quantity": "Quantity",
+      "ticketDeliveryMethod": "Ticket Delivery Method"
+    }
+  }
+}

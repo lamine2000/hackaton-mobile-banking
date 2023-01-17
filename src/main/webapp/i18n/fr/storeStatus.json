@@ -1,0 +1,10 @@
+{
+  "hackaton3App": {
+    "StoreStatus": {
+      "null": "",
+      "OPENED": "OPENED",
+      "CLOSED": "CLOSED",
+      "OUT_OF_SERVICE": "OUT_OF_SERVICE"
+    }
+  }
+}

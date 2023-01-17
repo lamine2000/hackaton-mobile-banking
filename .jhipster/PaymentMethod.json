@@ -1,0 +1,28 @@
+{
+  "applications": "*",
+  "changelogDate": "20230117000321",
+  "dto": "mapstruct",
+  "embedded": false,
+  "entityTableName": "payment_method",
+  "fields": [
+    {
+      "fieldName": "name",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "type",
+      "fieldType": "PaymentMethodType",
+      "fieldValidateRules": ["required"],
+      "fieldValues": "CASH,ELECTRONIC"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": true,
+  "name": "PaymentMethod",
+  "pagination": "pagination",
+  "readOnly": false,
+  "relationships": [],
+  "searchEngine": "elasticsearch",
+  "service": "serviceImpl"
+}

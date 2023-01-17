@@ -1,0 +1,10 @@
+{
+  "hackaton3App": {
+    "SupplyRequestStatus": {
+      "null": "",
+      "PENDING": "PENDING",
+      "REJECTED": "REJECTED",
+      "APPROVED": "APPROVED"
+    }
+  }
+}

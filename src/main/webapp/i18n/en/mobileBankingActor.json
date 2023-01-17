@@ -1,0 +1,28 @@
+{
+  "hackaton3App": {
+    "mobileBankingActor": {
+      "home": {
+        "title": "Mobile Banking Actors",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Mobile Banking Actor",
+        "createOrEditLabel": "Create or edit a Mobile Banking Actor",
+        "search": "Search for Mobile Banking Actor",
+        "notFound": "No Mobile Banking Actors found"
+      },
+      "created": "A new Mobile Banking Actor is created with identifier {{ param }}",
+      "updated": "A Mobile Banking Actor is updated with identifier {{ param }}",
+      "deleted": "A Mobile Banking Actor is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Mobile Banking Actor {{ id }}?"
+      },
+      "detail": {
+        "title": "Mobile Banking Actor"
+      },
+      "id": "ID",
+      "logo": "Logo",
+      "name": "Name",
+      "status": "Status",
+      "functionality": "Functionality"
+    }
+  }
+}

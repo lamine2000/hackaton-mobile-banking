@@ -1,0 +1,26 @@
+{
+  "hackaton3App": {
+    "functionalityCategory": {
+      "home": {
+        "title": "FunctionalityCategories",
+        "refreshListLabel": "Actualiser la liste",
+        "createLabel": "Créer un nouveau Functionality Category",
+        "createOrEditLabel": "Créer ou éditer un Functionality Category",
+        "search": "Recherche pour Functionality Category",
+        "notFound": "Aucun Functionality Category trouvé"
+      },
+      "created": "Un nouveau Functionality Category a été créé avec l'identifiant {{ param }}",
+      "updated": "Le Functionality Category avec l'identifiant {{ param }} a été mis à jour",
+      "deleted": "Le Functionality Category avec l'identifiant {{ param }} a été supprimé",
+      "delete": {
+        "question": "Êtes-vous certain de vouloir supprimer le Functionality Category {{ id }} ?"
+      },
+      "detail": {
+        "title": "Functionality Category"
+      },
+      "id": "ID",
+      "logo": "Logo",
+      "status": "Status"
+    }
+  }
+}

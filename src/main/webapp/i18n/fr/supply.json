@@ -1,0 +1,26 @@
+{
+  "hackaton3App": {
+    "supply": {
+      "home": {
+        "title": "Supplies",
+        "refreshListLabel": "Actualiser la liste",
+        "createLabel": "Créer un nouveau Supply",
+        "createOrEditLabel": "Créer ou éditer un Supply",
+        "search": "Recherche pour Supply",
+        "notFound": "Aucun Supply trouvé"
+      },
+      "created": "Un nouveau Supply a été créé avec l'identifiant {{ param }}",
+      "updated": "Le Supply avec l'identifiant {{ param }} a été mis à jour",
+      "deleted": "Le Supply avec l'identifiant {{ param }} a été supprimé",
+      "delete": {
+        "question": "Êtes-vous certain de vouloir supprimer le Supply {{ id }} ?"
+      },
+      "detail": {
+        "title": "Supply"
+      },
+      "id": "ID",
+      "receiver": "Receiver",
+      "supplyRequest": "Supply Request"
+    }
+  }
+}

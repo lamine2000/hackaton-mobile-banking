@@ -51,6 +51,33 @@ public class CacheConfiguration {
             createCache(cm, sn.finedev.java.domain.User.class.getName());
             createCache(cm, sn.finedev.java.domain.Authority.class.getName());
             createCache(cm, sn.finedev.java.domain.User.class.getName() + ".authorities");
+            createCache(cm, sn.finedev.java.domain.Functionality.class.getName());
+            createCache(cm, sn.finedev.java.domain.Functionality.class.getName() + ".mobileBankingActors");
+            createCache(cm, sn.finedev.java.domain.FunctionalityCategory.class.getName());
+            createCache(cm, sn.finedev.java.domain.Transac.class.getName());
+            createCache(cm, sn.finedev.java.domain.MobileBankingActor.class.getName());
+            createCache(cm, sn.finedev.java.domain.MobileBankingActor.class.getName() + ".functionalities");
+            createCache(cm, sn.finedev.java.domain.SupplyRequest.class.getName());
+            createCache(cm, sn.finedev.java.domain.Supply.class.getName());
+            createCache(cm, sn.finedev.java.domain.Payment.class.getName());
+            createCache(cm, sn.finedev.java.domain.PaymentMethod.class.getName());
+            createCache(cm, sn.finedev.java.domain.Event.class.getName());
+            createCache(cm, sn.finedev.java.domain.Notification.class.getName());
+            createCache(cm, sn.finedev.java.domain.NotificationSettings.class.getName());
+            createCache(cm, sn.finedev.java.domain.Ticket.class.getName());
+            createCache(cm, sn.finedev.java.domain.TicketDelivery.class.getName());
+            createCache(cm, sn.finedev.java.domain.TicketDeliveryMethod.class.getName());
+            createCache(cm, sn.finedev.java.domain.Store.class.getName());
+            createCache(cm, sn.finedev.java.domain.InsuranceAndMicroCreditsActor.class.getName());
+            createCache(cm, sn.finedev.java.domain.InsuranceAndMicroCreditsContribution.class.getName());
+            createCache(cm, sn.finedev.java.domain.AdminNetwork.class.getName());
+            createCache(cm, sn.finedev.java.domain.IntermediateAgent.class.getName());
+            createCache(cm, sn.finedev.java.domain.FinalAgent.class.getName());
+            createCache(cm, sn.finedev.java.domain.Country.class.getName());
+            createCache(cm, sn.finedev.java.domain.Region.class.getName());
+            createCache(cm, sn.finedev.java.domain.Department.class.getName());
+            createCache(cm, sn.finedev.java.domain.Town.class.getName());
+            createCache(cm, sn.finedev.java.domain.Zone.class.getName());
             // jhipster-needle-ehcache-add-entry
         };
     }

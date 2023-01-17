@@ -1,0 +1,11 @@
+{
+  "hackaton3App": {
+    "TransacType": {
+      "null": "",
+      "DEPOSIT": "DEPOSIT",
+      "WITHDRAW": "WITHDRAW",
+      "INSURANCE_AND_MICRO_CREDITS_CONTRIBUTION": "INSURANCE_AND_MICRO_CREDITS_CONTRIBUTION",
+      "PAYMENT": "PAYMENT"
+    }
+  }
+}

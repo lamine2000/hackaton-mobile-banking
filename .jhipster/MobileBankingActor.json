@@ -1,0 +1,42 @@
+{
+  "applications": "*",
+  "changelogDate": "20230117000317",
+  "dto": "mapstruct",
+  "embedded": false,
+  "entityTableName": "mobile_banking_actor",
+  "fields": [
+    {
+      "fieldName": "logo",
+      "fieldType": "byte[]",
+      "fieldTypeBlobContent": "image",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "name",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "status",
+      "fieldType": "MobileBankingActorStatus",
+      "fieldValidateRules": ["required"],
+      "fieldValues": "AVAILABLE,UNAVAILABLE,OUT_OF_CREDITS"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": true,
+  "name": "MobileBankingActor",
+  "pagination": "pagination",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "functionality",
+      "otherEntityRelationshipName": "mobileBankingActor",
+      "ownerSide": true,
+      "relationshipName": "functionality",
+      "relationshipType": "many-to-many"
+    }
+  ],
+  "searchEngine": "elasticsearch",
+  "service": "serviceImpl"
+}

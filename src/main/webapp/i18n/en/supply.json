@@ -1,0 +1,26 @@
+{
+  "hackaton3App": {
+    "supply": {
+      "home": {
+        "title": "Supplies",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Supply",
+        "createOrEditLabel": "Create or edit a Supply",
+        "search": "Search for Supply",
+        "notFound": "No Supplies found"
+      },
+      "created": "A new Supply is created with identifier {{ param }}",
+      "updated": "A Supply is updated with identifier {{ param }}",
+      "deleted": "A Supply is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Supply {{ id }}?"
+      },
+      "detail": {
+        "title": "Supply"
+      },
+      "id": "ID",
+      "receiver": "Receiver",
+      "supplyRequest": "Supply Request"
+    }
+  }
+}

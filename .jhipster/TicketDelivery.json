@@ -1,0 +1,37 @@
+{
+  "applications": "*",
+  "changelogDate": "20230117000326",
+  "dto": "mapstruct",
+  "embedded": false,
+  "entityTableName": "ticket_delivery",
+  "fields": [
+    {
+      "fieldName": "boughtAt",
+      "fieldType": "Instant",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "boughtBy",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "quantity",
+      "fieldType": "Integer",
+      "fieldValidateRules": ["required"]
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": true,
+  "name": "TicketDelivery",
+  "pagination": "pagination",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "ticketDeliveryMethod",
+      "relationshipName": "ticketDeliveryMethod",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "searchEngine": "elasticsearch",
+  "service": "serviceImpl"
+}

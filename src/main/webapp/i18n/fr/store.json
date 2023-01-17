@@ -1,0 +1,39 @@
+{
+  "hackaton3App": {
+    "store": {
+      "home": {
+        "title": "Stores",
+        "refreshListLabel": "Actualiser la liste",
+        "createLabel": "Créer un nouveau Store",
+        "createOrEditLabel": "Créer ou éditer un Store",
+        "search": "Recherche pour Store",
+        "notFound": "Aucun Store trouvé"
+      },
+      "created": "Un nouveau Store a été créé avec l'identifiant {{ param }}",
+      "updated": "Le Store avec l'identifiant {{ param }} a été mis à jour",
+      "deleted": "Le Store avec l'identifiant {{ param }} a été supprimé",
+      "delete": {
+        "question": "Êtes-vous certain de vouloir supprimer le Store {{ id }} ?"
+      },
+      "detail": {
+        "title": "Store"
+      },
+      "id": "ID",
+      "code": "Code",
+      "location": "Location",
+      "address": "Address",
+      "name": "Name",
+      "description": "Description",
+      "currency": "Currency",
+      "phone": "Phone",
+      "notificationEmail": "Notification Email",
+      "status": "Status",
+      "aboutUs": "About Us",
+      "zone": "Zone",
+      "town": "Town",
+      "department": "Department",
+      "region": "Region",
+      "country": "Country"
+    }
+  }
+}

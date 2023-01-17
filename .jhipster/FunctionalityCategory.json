@@ -1,0 +1,29 @@
+{
+  "applications": "*",
+  "changelogDate": "20230117000315",
+  "dto": "mapstruct",
+  "embedded": false,
+  "entityTableName": "functionality_category",
+  "fields": [
+    {
+      "fieldName": "logo",
+      "fieldType": "byte[]",
+      "fieldTypeBlobContent": "image",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "status",
+      "fieldType": "FunctionalityCategoryStatus",
+      "fieldValidateRules": ["required"],
+      "fieldValues": "UNAVAILABLE,AVAILABLE"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": true,
+  "name": "FunctionalityCategory",
+  "pagination": "pagination",
+  "readOnly": false,
+  "relationships": [],
+  "searchEngine": "elasticsearch",
+  "service": "serviceImpl"
+}

@@ -1,0 +1,10 @@
+{
+  "hackaton3App": {
+    "FunctionalityStatus": {
+      "null": "",
+      "UNAVAILABLE": "UNAVAILABLE",
+      "AVAILABLE": "AVAILABLE",
+      "OUT_OF_CREDITS": "OUT_OF_CREDITS"
+    }
+  }
+}

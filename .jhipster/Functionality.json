@@ -1,0 +1,42 @@
+{
+  "applications": "*",
+  "changelogDate": "20230117000314",
+  "dto": "mapstruct",
+  "embedded": false,
+  "entityTableName": "functionality",
+  "fields": [
+    {
+      "fieldName": "image",
+      "fieldType": "byte[]",
+      "fieldTypeBlobContent": "image",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "status",
+      "fieldType": "FunctionalityStatus",
+      "fieldValidateRules": ["required"],
+      "fieldValues": "UNAVAILABLE,AVAILABLE,OUT_OF_CREDITS"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": true,
+  "name": "Functionality",
+  "pagination": "pagination",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "functionalityCategory",
+      "relationshipName": "functionalityCategory",
+      "relationshipType": "many-to-one"
+    },
+    {
+      "otherEntityName": "mobileBankingActor",
+      "otherEntityRelationshipName": "functionality",
+      "ownerSide": false,
+      "relationshipName": "mobileBankingActor",
+      "relationshipType": "many-to-many"
+    }
+  ],
+  "searchEngine": "elasticsearch",
+  "service": "serviceImpl"
+}

@@ -1,0 +1,10 @@
+{
+  "hackaton3App": {
+    "TicketStatus": {
+      "null": "",
+      "SOLD": "SOLD",
+      "AVAILABLE": "AVAILABLE",
+      "EXPIRED": "EXPIRED"
+    }
+  }
+}

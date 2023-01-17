@@ -1,0 +1,58 @@
+{
+  "applications": "*",
+  "changelogDate": "20230117000325",
+  "dto": "mapstruct",
+  "embedded": false,
+  "entityTableName": "ticket",
+  "fields": [
+    {
+      "fieldName": "code",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "data",
+      "fieldType": "byte[]",
+      "fieldTypeBlobContent": "any",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "pricePerUnit",
+      "fieldType": "Double",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "finalAgentCommission",
+      "fieldType": "Double"
+    },
+    {
+      "fieldName": "status",
+      "fieldType": "TicketStatus",
+      "fieldValidateRules": ["required"],
+      "fieldValues": "SOLD,AVAILABLE,EXPIRED"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": true,
+  "name": "Ticket",
+  "pagination": "pagination",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "event",
+      "relationshipName": "event",
+      "relationshipType": "many-to-one"
+    },
+    {
+      "otherEntityName": "payment",
+      "relationshipName": "payment",
+      "relationshipType": "many-to-one"
+    },
+    {
+      "otherEntityName": "ticketDelivery",
+      "relationshipName": "ticketDelivery",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "searchEngine": "elasticsearch",
+  "service": "serviceImpl"
+}

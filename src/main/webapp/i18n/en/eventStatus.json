@@ -1,0 +1,10 @@
+{
+  "hackaton3App": {
+    "EventStatus": {
+      "null": "",
+      "EXPIRED": "EXPIRED",
+      "UPCOMING": "UPCOMING",
+      "CANCELLED": "CANCELLED"
+    }
+  }
+}

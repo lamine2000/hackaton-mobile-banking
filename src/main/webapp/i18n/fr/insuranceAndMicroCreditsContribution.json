@@ -1,0 +1,27 @@
+{
+  "hackaton3App": {
+    "insuranceAndMicroCreditsContribution": {
+      "home": {
+        "title": "InsuranceAndMicroCreditsContributions",
+        "refreshListLabel": "Actualiser la liste",
+        "createLabel": "Créer un nouveau Insurance And Micro Credits Contribution",
+        "createOrEditLabel": "Créer ou éditer un Insurance And Micro Credits Contribution",
+        "search": "Recherche pour Insurance And Micro Credits Contribution",
+        "notFound": "Aucun Insurance And Micro Credits Contribution trouvé"
+      },
+      "created": "Un nouveau Insurance And Micro Credits Contribution a été créé avec l'identifiant {{ param }}",
+      "updated": "Le Insurance And Micro Credits Contribution avec l'identifiant {{ param }} a été mis à jour",
+      "deleted": "Le Insurance And Micro Credits Contribution avec l'identifiant {{ param }} a été supprimé",
+      "delete": {
+        "question": "Êtes-vous certain de vouloir supprimer le Insurance And Micro Credits Contribution {{ id }} ?"
+      },
+      "detail": {
+        "title": "Insurance And Micro Credits Contribution"
+      },
+      "id": "ID",
+      "code": "Code",
+      "insuranceAndMicroCreditsActor": "Insurance And Micro Credits Actor",
+      "payment": "Payment"
+    }
+  }
+}

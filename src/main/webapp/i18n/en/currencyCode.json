@@ -1,0 +1,10 @@
+{
+  "hackaton3App": {
+    "CurrencyCode": {
+      "null": "",
+      "XOF": "XOF",
+      "USD": "USD",
+      "EUR": "EUR"
+    }
+  }
+}

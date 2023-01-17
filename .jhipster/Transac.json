@@ -1,0 +1,57 @@
+{
+  "applications": "*",
+  "changelogDate": "20230117000316",
+  "dto": "mapstruct",
+  "embedded": false,
+  "entityTableName": "transac",
+  "fields": [
+    {
+      "fieldName": "code",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "createdBy",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "createdAt",
+      "fieldType": "Instant",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "receiver",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "sender",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "amount",
+      "fieldType": "Double",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "currency",
+      "fieldType": "CurrencyCode",
+      "fieldValidateRules": ["required"],
+      "fieldValues": "XOF,USD,EUR"
+    },
+    {
+      "fieldName": "type",
+      "fieldType": "TransacType",
+      "fieldValidateRules": ["required"],
+      "fieldValues": "DEPOSIT,WITHDRAW,INSURANCE_AND_MICRO_CREDITS_CONTRIBUTION,PAYMENT"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": true,
+  "name": "Transac",
+  "pagination": "pagination",
+  "readOnly": false,
+  "relationships": [],
+  "searchEngine": "elasticsearch",
+  "service": "serviceImpl"
+}

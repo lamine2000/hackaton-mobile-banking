@@ -1,0 +1,28 @@
+{
+  "hackaton3App": {
+    "town": {
+      "home": {
+        "title": "Towns",
+        "refreshListLabel": "Actualiser la liste",
+        "createLabel": "Créer un nouveau Town",
+        "createOrEditLabel": "Créer ou éditer un Town",
+        "search": "Recherche pour Town",
+        "notFound": "Aucun Town trouvé"
+      },
+      "created": "Un nouveau Town a été créé avec l'identifiant {{ param }}",
+      "updated": "Le Town avec l'identifiant {{ param }} a été mis à jour",
+      "deleted": "Le Town avec l'identifiant {{ param }} a été supprimé",
+      "delete": {
+        "question": "Êtes-vous certain de vouloir supprimer le Town {{ id }} ?"
+      },
+      "detail": {
+        "title": "Town"
+      },
+      "id": "ID",
+      "name": "Name",
+      "code": "Code",
+      "createdAt": "Created At",
+      "createdBy": "Created By"
+    }
+  }
+}

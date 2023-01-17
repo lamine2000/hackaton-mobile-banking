@@ -1,0 +1,28 @@
+{
+  "hackaton3App": {
+    "insuranceAndMicroCreditsActor": {
+      "home": {
+        "title": "Insurance And Micro Credits Actors",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Insurance And Micro Credits Actor",
+        "createOrEditLabel": "Create or edit a Insurance And Micro Credits Actor",
+        "search": "Search for Insurance And Micro Credits Actor",
+        "notFound": "No Insurance And Micro Credits Actors found"
+      },
+      "created": "A new Insurance And Micro Credits Actor is created with identifier {{ param }}",
+      "updated": "A Insurance And Micro Credits Actor is updated with identifier {{ param }}",
+      "deleted": "A Insurance And Micro Credits Actor is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Insurance And Micro Credits Actor {{ id }}?"
+      },
+      "detail": {
+        "title": "Insurance And Micro Credits Actor"
+      },
+      "id": "ID",
+      "logo": "Logo",
+      "name": "Name",
+      "acronym": "Acronym",
+      "description": "Description"
+    }
+  }
+}
